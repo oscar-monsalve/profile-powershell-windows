@@ -26,7 +26,7 @@ function onedrive {
     Set-Location D:\
 
     # Specify the target path with encoded "ó" character
-    $encodedPath = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes(".\OneDrive - Instituto Tecnológico Metropolitano\"))
+    $encodedPath = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::Default.GetBytes("D:\OneDrive"))
 
     # Check if the path already exists
     if (Test-Path $encodedPath) {
@@ -42,7 +42,6 @@ Set-PSReadLineKeyHandler -Key "Ctrl+P" -ScriptBlock {start_powershell}
 Set-PSReadLineKeyHandler -Key "Ctrl+F" -ScriptBlock {fd}
 # Change to D: drive and cd into the onedrive directory
 Set-PSReadLineKeyHandler -Key "Ctrl+O" -ScriptBlock {onedrive}
-
 
 # Set aliases
 Set-Alias vim nvim
