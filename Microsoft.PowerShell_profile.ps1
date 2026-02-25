@@ -45,4 +45,5 @@ Set-PSReadLineKeyHandler -Key "Ctrl+O" -ScriptBlock {onedrive}
 
 # Set aliases
 Set-Alias vim nvim
+Set-Alias python "C:\Users\Oscar Monsalve\AppData\Local\Microsoft\WindowsApps\py.exe"
 Set-Alias arduino "~/AppData/Local/Programs/Arduino IDE/Arduino IDE.exe"
